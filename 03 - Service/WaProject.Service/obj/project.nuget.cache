@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Y07VQ0Wjl1WbTNTwEKnTgpl24yVNdgcVCTKEWyPDyblmID9g0hgGF7pHXl4paDCaXGGvkHfDs/xqlXQzzmCMBQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projetos\\PESSOAIS\\SOLUCOES\\waproject\\WaProjectVaga\\API\\03 - Service\\WaProject.Service\\WaProject.Service.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DOLPM\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\DOLPM\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
+    "C:\\Users\\DOLPM\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

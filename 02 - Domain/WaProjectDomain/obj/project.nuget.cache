@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "BFqMAEaUl2nRpqiRtUH0U2wlIZ6gRYGkSDroyqlEEjKc1WMlZq9Rb5D51K8+NCJEsLZB1ufvB1VsoX9XwMVstQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projetos\\PESSOAIS\\SOLUCOES\\waproject\\WaProjectVaga\\API\\02 - Domain\\WaProjectDomain\\WaProject.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DOLPM\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}
