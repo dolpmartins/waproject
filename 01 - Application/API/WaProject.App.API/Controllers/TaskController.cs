@@ -62,13 +62,11 @@ namespace WaProjectAPI.Controllers
             if (id == 0)
                 return NotFound();
 
-            Execute(() =>
+            return Execute(() =>
             {
                 _baseJobService.Delete(id);
                 return true;
             });
-
-            return new NoContentResult();
         }
 
         [HttpPut]

@@ -35,6 +35,18 @@ namespace WaProject.App.API
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WaProject.App.API", Version = "v1" });
             });
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder =>
+                    {
+                        builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                    });
+            });
+
 
             services.AddScoped<IBaseRepository<Job>, BaseRepository<Job>>();
             services.AddScoped<IBaseService<Job>, BaseService<Job>>();
@@ -46,7 +58,7 @@ namespace WaProject.App.API
                 config.CreateMap<CreateJobModel, Job>().ReverseMap();
                 config.CreateMap<UpdateJobModel, Job>()
                 .ForMember(j => j.CreatedDate, opt => opt.Ignore()).ReverseMap();
-                config.CreateMap<Job, JobModel>().ReverseMap();
+                config.CreateMap<JobModel, Job>().ReverseMap();
             }).CreateMapper());
         }
 
@@ -62,7 +74,10 @@ namespace WaProject.App.API
 
             app.UseHttpsRedirection();
 
+
+
             app.UseRouting();
+            app.UseCors("AllowAll");
 
             app.UseAuthorization();
 

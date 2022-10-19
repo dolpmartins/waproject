@@ -10,6 +10,7 @@ namespace WaProject.App.API.Model
         public int Id { get; set; }
         public string Descricao { get; set; }
         public bool Completed { get; set; }
+        public string CompletedDescription => this.Completed ? "Sim" : "Não";
         public DateTime? CompletedDate { get; set; }
         public DateTime CreatedDate { get; set; }
     }
